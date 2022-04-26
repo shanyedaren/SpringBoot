@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.kuang.ConsumerServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.621 s <<< FAILURE! - in com.kuang.ConsumerServerApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of @Reference dependencies is failed; nested exception is java.lang.IllegalStateException: Failed to check the status of the service com.kuang.service.TicketService. No provider available for the service com.kuang.service.TicketService from the url zookeeper://127.0.0.1:2181/org.apache.dubbo.registry.RegistryService?application=consumer-server&dubbo=2.0.2&interface=com.kuang.service.TicketService&lazy=false&methods=getTicket&pid=2696&qos.enable=false&register.ip=2.0.1.41&release=2.7.3&side=consumer&sticky=false&timestamp=1650982119124 to the consumer 2.0.1.41 use dubbo version 2.7.3
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service com.kuang.service.TicketService. No provider available for the service com.kuang.service.TicketService from the url zookeeper://127.0.0.1:2181/org.apache.dubbo.registry.RegistryService?application=consumer-server&dubbo=2.0.2&interface=com.kuang.service.TicketService&lazy=false&methods=getTicket&pid=2696&qos.enable=false&register.ip=2.0.1.41&release=2.7.3&side=consumer&sticky=false&timestamp=1650982119124 to the consumer 2.0.1.41 use dubbo version 2.7.3
+
